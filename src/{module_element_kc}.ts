@@ -7,7 +7,9 @@ import {
 } from '@serranolabs.io/shared/module-element';
 import { BookeraModule, type RenderMode } from '@serranolabs.io/shared/module';
 
-@customElement('{module_element_kc}')
+export const elementName = '{module_element_kc}';
+
+@customElement(elementName)
 export class $ModuleElementName extends BookeraModuleElement {
   static styles = [$moduleElementNameStyles, baseCss, moduleElementStyles];
 
@@ -22,6 +24,6 @@ export class $ModuleElementName extends BookeraModuleElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    '{module_element_kc}': $ModuleElementName;
+    [elementName]: $ModuleElementName;
   }
 }
