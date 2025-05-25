@@ -31,10 +31,21 @@
       document.body.appendChild(separator.cloneNode(true));
       }
 
-      makeDemo("renderInSettings")
-      makeDemo("renderInDaemon")
-      makeDemo("renderInSidePanel")
-      makeDemo("renderInPanel")
+      if ($moduleElementNameModule.hasSettings()) {
+        makeDemo("renderInSettings")
+      } 
+      
+      if ($moduleElementNameModule.hasModuleDaemon()) {
+        makeDemo("renderInDaemon")
+      } 
+
+      if ($moduleElementNameModule.hasSidePanel()) {
+        makeDemo("renderInSidePanel")
+      } 
+
+      if ($moduleElementNameModule.hasPanel()) {
+        makeDemo("renderInPanel")
+      } 
 
     </script>
   
