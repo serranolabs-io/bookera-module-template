@@ -5,10 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{module_name_hr}</title>
-    <script type="module" src="/src/my-element.ts"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <style>
+      .separator {
+        margin: 2rem 0;
+      }
+
+    </style>
     <script type="module" >
       import {$ModuleElementName} from '/src/{module_element_kc}.ts';
       import {$moduleElementNameModule} from '/src/module.ts';
@@ -16,8 +21,10 @@
 
       const makeDemo = (renderMode) => {
         let separator = document.createElement("p");
+        separator.classList.add("separator")
         let $moduleElementName = new $ModuleElementName(renderMode, $moduleElementNameModule);
         separator.innerText = `start ${renderMode} ----------------------------------------`;
+
         document.body.appendChild(separator.cloneNode(true));
       document.body.appendChild($moduleElementName);
       separator.innerText = `end ${renderMode} ----------------------------------------`;
