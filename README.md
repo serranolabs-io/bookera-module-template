@@ -1,3 +1,3 @@
-## Welcome to {module_element_hr}!
+## Welcome to {module_name_hr}!
 
 {description}
