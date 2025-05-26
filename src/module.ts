@@ -11,10 +11,11 @@ export const $moduleElementNameModule = new BookeraModule(
   description,
   new Tab(
     '{module_name_hr}',
-    'palette',
     '{tab.icon}',
+    '',
     '{module_element_kc}',
-    'left'
+    '{shouldShowLeftSide}',
+    [`{renderModes}`]
   ).removeTab(),
   genShortID(10),
   [],
