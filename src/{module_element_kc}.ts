@@ -23,7 +23,7 @@ export class $ModuleElementName extends BookeraModuleElement {
   }
 
   protected renderInSettings(): TemplateResult {
-    return html`hello from settings`;
+    return html`${this.renderTitleSection()} `;
   }
   protected renderInSidePanel(): TemplateResult {
     return html`hello from Side panel`;
