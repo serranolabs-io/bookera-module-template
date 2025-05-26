@@ -1,5 +1,6 @@
 {
   "name": "@serranolabs.io/{package_name}",
+  "description": "{description}",
   "private": false,
   "version": "0.0.0",
   "type": "module",
