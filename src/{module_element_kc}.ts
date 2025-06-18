@@ -14,12 +14,8 @@ export const elementName = '{module_element_kc}';
 export class $ModuleElementName extends BookeraModuleElement {
   static styles = [$moduleElementNameStyles, baseCss, moduleElementStyles];
 
-  constructor(
-    renderMode: RenderMode,
-    module: BookeraModule,
-    _panelTabId?: string
-  ) {
-    super(renderMode, module, _panelTabId);
+  constructor(config: BookeraModuleConfig) {
+    super(config);
   }
 
   protected renderInSettings(): TemplateResult {

@@ -25,7 +25,7 @@
       const makeDemo = (renderMode) => {
         let separator = document.createElement("p");
         separator.classList.add("separator")
-        let $moduleElementName = new $ModuleElementName(renderMode, $moduleElementNameModule);
+        let $moduleElementName = new $ModuleElementName({renderMode: renderMode, module: $moduleElementNameModule});
         separator.innerText = `start ${renderMode} ----------------------------------------`;
 
         document.body.appendChild(separator.cloneNode(true));
