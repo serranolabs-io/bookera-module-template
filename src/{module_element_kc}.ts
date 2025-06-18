@@ -22,7 +22,7 @@ export class $ModuleElementName extends BookeraModuleElement {
     return html`${this.renderTitleSection()} `;
   }
   protected renderInSidePanel(): TemplateResult {
-    return html`hello from Side panel`;
+    return html`${this.renderSidePanelTitleSection()}`;
   }
   protected renderInPanel(): TemplateResult {
     return html`hello from Panel`;
