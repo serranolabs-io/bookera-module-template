@@ -5,7 +5,11 @@ import {
   BookeraModuleElement,
   moduleElementStyles,
 } from '@serranolabs.io/shared/module-element';
-import { BookeraModule, type RenderMode } from '@serranolabs.io/shared/module';
+import {
+  BookeraModule,
+  BookeraModuleConfig,
+  type RenderMode,
+} from '@serranolabs.io/shared/module';
 import { html, TemplateResult } from 'lit';
 
 export const elementName = '{module_element_kc}';
