@@ -13,33 +13,8 @@
     "dist"
   ],
   "exports": {
-    ".": {
-      "default": {
-        "import": "./dist/{module_name_kc}.js",
-        "types": "./dist/main.d.ts"
-      },
-      "development": {
-        "import": "./src/{module_name_kc}.ts",
-        "types": "./dist/main.d.ts"
-      },
-      "production": {
-        "import": "./dist/shortcuts.js",
-        "types": "./dist/main.d.ts"
-      }
-    },
-    "./shortcuts": {
-      "default": {
-        "import": "./dist/shortcuts.js",
-        "types": "./dist/shortcuts.json.d.ts"
-      },
-      "development": {
-        "import": "./src/shortcuts.json"
-      },
-      "production": {
-        "import": "./dist/shortcuts.js",
-        "types": "./dist/shortcuts.json.d.ts"
-      }
-    }
+    ".": "./src/main.ts",
+    "./shortcuts": "./src/shortcuts.json"
   },
   "dependencies": {
     "lit": "^3.3.0",
