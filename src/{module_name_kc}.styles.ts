@@ -3,6 +3,9 @@ export default css`
   /* 
 SIDE PANEL
 */
+  .side-panel-content {
+    padding: 0 var(--spacingSmall);
+  }
   /* 
 END SIDE PANEL
 */

@@ -5,11 +5,7 @@ import {
   BookeraModuleElement,
   moduleElementStyles,
 } from '@serranolabs.io/shared/module-element';
-import {
-  BookeraModule,
-  BookeraModuleConfig,
-  type RenderMode,
-} from '@serranolabs.io/shared/module';
+import { BookeraModuleConfig } from '@serranolabs.io/shared/module';
 import { html, TemplateResult } from 'lit';
 
 export const elementName = '{module_element_kc}';
@@ -26,7 +22,8 @@ export class $ModuleElementName extends BookeraModuleElement {
     return html`${this.renderTitleSection()} `;
   }
   protected renderInSidePanel(): TemplateResult {
-    return html`${this.renderSidePanelTitleSection()}`;
+    return html`${this.renderSidePanelTitleSection()}
+      <div class="side-panel-content">hello</div> `;
   }
   protected renderInPanel(): TemplateResult {
     return html`hello from Panel`;

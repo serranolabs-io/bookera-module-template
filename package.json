@@ -20,7 +20,8 @@
     "lit": "^3.3.0",
     "@shoelace-style/shoelace": "^2.20.1",
     "localforage": "^1.10.0",
-    "vite-plugin-dts": "^4.5.3"
+    "vite-plugin-dts": "^4.5.3",
+    "@tanstack/lit-form": "^1.11.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.25.9",
